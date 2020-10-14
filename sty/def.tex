@@ -5,28 +5,21 @@
 % \eframe
 \newcommand{\topline}{%
   \tikz[remember picture,overlay] {%
-    \draw[black, line width=0.2em] (
+    \draw[black, line width=0.15em] (
     [yshift=-1cm]current page.north west)
-             -- ([yshift=-1cm,xshift=0.95\paperwidth]current page.north west);}}
-
+             -- ([yshift=-1cm,xshift=\paperwidth]current page.north west);}}
 \long\def\bframe#1#2\eframe{\begin{frame}{#1}\topline#2\end{frame}}
 \long\def\bbframe#1\eframe{\begin{frame}#1\end{frame}}
-
 \long\def\be#1\ee{\begin{align*}#1\end{align*}}
-
 \long\def\bcc#1\ecc{\begin{columns}#1\end{columns}}
 \long\def\bc#1\ec{\begin{column}{0.48\textwidth}#1\end{column}}
-
 \newcommand{\fig}[1]{%
   \begin{center}
     \includegraphics[width=\textwidth]{#1}
 \end{center}}
-
 \newcommand{\wfig}[2]{%
   \begin{center}
     \includegraphics[width=#1\textwidth]{#2}
   \end{center}}
-
-
 \newcommand{\ffig}[2]{%
     \includegraphics[width=#1\textwidth]{#2}}

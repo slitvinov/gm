@@ -8,8 +8,6 @@ i=
 
 $M.pdf: $M.tex $t $i
 	pdflatex $a $< && \
-	bibtex   $M    && \
-	pdflatex $a $< && \
 	pdflatex $a $<
 
 png: $M.pdf
