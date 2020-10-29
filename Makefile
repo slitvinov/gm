@@ -16,7 +16,6 @@ png: $M.pdf
 view: $M.pdf
 	llpp $M.pdf
 
-.PHONY: clean png view
 clean:
 	@echo clean
 	@rm -f $M.aux $M.log $M.nav $M.out $M.pdf $M.snm $M.toc

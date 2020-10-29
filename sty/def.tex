@@ -1,13 +1,10 @@
-% See goo.gl/wGteI5
-% Define
-% \bframe{Title}
-%   Slide
-% \eframe
 \newcommand{\topline}{%
-  \tikz[remember picture,overlay] {%
-    \draw[black, line width=0.15em] (
-    [yshift=-1cm]current page.north west)
-             -- ([yshift=-1cm,xshift=\paperwidth]current page.north west);}}
+  \begin{tikzpicture}[remember picture,overlay]
+   \node[xshift=0.5\paperwidth,yshift=-1cm] at (current page.north west){%
+    \includegraphics[width=\paperwidth]{i/line.png}};
+  \end{tikzpicture}
+}
+
 \long\def\bframe#1#2\eframe{\begin{frame}{#1}\topline#2\end{frame}}
 \long\def\bbframe#1\eframe{\begin{frame}#1\end{frame}}
 \long\def\be#1\ee{\begin{align*}#1\end{align*}}
