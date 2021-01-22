@@ -4,20 +4,35 @@
 \input{sty/def.tex}
 \input{sty/pkg.tex}
 
-%\pdfpageheight=1920pt
-%\pdfpagewidth=1080pt
-
 \begin{document}
 
-\bframe{RL for Fuid Mechanics}
-aphros: flows with surface tension and chemical kinetics (Petr)
-\newline
-Nek5000: spectral element method, FORTRAN 77 (Jane, Martin, )
-\newline
-LAMMPS: particles (Ivica, Lucas, Pantelis, Pascal)
-\newline
-\includegraphics[width=0.29\textwidth]{i/aphros.png}
-\includegraphics[width=0.29\textwidth]{i/lammps.png}
-\includegraphics[width=0.39\textwidth]{i/nek.png}
+\bframe{Shallow analogy with biological neural networks}
+Discussion about biological NN is not connected to the proposed model.
 \eframe
+
+\bframe{Evolvable Neural Units (ENU) is butchered GRU}
+\begin{center}
+  \includegraphics[width=0.50\textwidth]{i/eq.png}
+\end{center}
+ENU is GRU with output plugged into internals \\
+No motivation for the change is given \\
+``Evolvable'' means un-trainable: suffers from vanishing gradient problem
+\eframe
+
+\bframe{Meaningless comparison}
+\begin{center}
+  \includegraphics[width=0.90\textwidth]{i/lines.png}
+\end{center}
+random search path depends on initial condition \\
+backproparation is a supperior way to train GRU and LSTM
+\eframe
+
+\bframe{Crippled artificial life toy is an example of meta-learning?}
+\begin{center}
+  \includegraphics[width=0.75\textwidth]{i/maze.png}
+\end{center}
+The state is very small (5x7): position, orientation, flag if food was seen. \\
+Can be solved by a tabular method
+\eframe
+
 \end{document}
