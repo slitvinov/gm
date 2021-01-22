@@ -19,6 +19,36 @@ No motivation for the change is given \\
 ``Evolvable'' means un-trainable: suffers from vanishing gradient problem
 \eframe
 
+\bframe{Spiking Neurons}
+
+Current GPUs, however, are little ovens, much
+hungrier for energy than biological brains.
+...
+In practical applications, however,current artificial networks of
+spiking neurons cannot yet compete withth best traditional NN
+(J. Schmidhuber, 2015)
+
+\begin{center}
+  \includegraphics[width=0.80\textwidth]{i/iaf.png}
+\end{center}
+\eframe
+
+\bframe{STDP}
+
+``Spike Timing Dependent Plasticity (STDP) is a temporally asymmetric
+form of Hebbian learning induced by tight temporal correlations
+between the spikes of pre- and postsynaptic neurons. As with other
+forms of synaptic plasticity, it is widely believed that it underlies
+learning and information storage in the brain.''
+\\
+``A paradox in auditory and electrosensory neural systems is that they
+encode behaviourally relevant signals in the range of a few
+microseconds with neurons that are at least one order of magnitude
+slower. A central question is whether neuronal firing can be more
+precise than the time constants of the neuronal processes involved.''
+
+\eframe
+
 \bframe{Meaningless comparison}
 \begin{center}
   \includegraphics[width=0.90\textwidth]{i/lines.png}
@@ -31,7 +61,7 @@ backproparation is a supperior way to train GRU and LSTM
 \begin{center}
   \includegraphics[width=0.75\textwidth]{i/maze.png}
 \end{center}
-The state is very small (5x7): position, orientation, flag if food was seen. \\
+The state is very small (5x4): position, orientation, flag if food was seen. \\
 Can be solved by a tabular method
 \eframe
 
