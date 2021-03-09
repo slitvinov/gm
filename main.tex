@@ -5,64 +5,69 @@
 \input{sty/pkg.tex}
 
 \begin{document}
-
-\bframe{Shallow analogy with biological neural networks}
-Discussion about biological NN is not connected to the proposed model.
-\eframe
-
-\bframe{Evolvable Neural Units (ENU) is butchered GRU}
+\bframe{Aphros}
+``Sea-Foam''
 \begin{center}
-  \includegraphics[width=0.50\textwidth]{i/eq.png}
-\end{center}
-ENU is GRU with output plugged into internals \\
-No motivation for the change is given \\
-``Evolvable'' means un-trainable: suffers from vanishing gradient problem
-\eframe
-
-\bframe{Spiking Neurons}
-
-Current GPUs, however, are little ovens, much
-hungrier for energy than biological brains.
-...
-In practical applications, however,current artificial networks of
-spiking neurons cannot yet compete withth best traditional NN
-(J. Schmidhuber, 2015)
-
-\begin{center}
-  \includegraphics[width=0.80\textwidth]{i/iaf.png}
+  \includegraphics[width=0.5\textwidth]{i/god.png}
 \end{center}
 \eframe
 
-\bframe{STDP}
+\bframe{Aphros}
+\begin{center}
+  \includegraphics[width=0.75\textwidth]{i/ddg.png}
+\end{center}
+\eframe
 
-``Spike Timing Dependent Plasticity (STDP) is a temporally asymmetric
-form of Hebbian learning induced by tight temporal correlations
-between the spikes of pre- and postsynaptic neurons. As with other
-forms of synaptic plasticity, it is widely believed that it underlies
-learning and information storage in the brain.''
+\bframe{Authors}
 \\
-``A paradox in auditory and electrosensory neural systems is that they
-encode behaviourally relevant signals in the range of a few
-microseconds with neurons that are at least one order of magnitude
-slower. A central question is whether neuronal firing can be more
-precise than the time constants of the neuronal processes involved.''
+Petr Karnakov\\
+Sergey Litvinov\\
+Fabian Wermelinger\\
+Prof. Petros Koumoutsakos
+\vskip 4em
+Based on Cubism: \\
+D. Rossinelli, B. Hejazialhosseini, P. Hadjidoukas, C. Bekas, A. Curioni, A. Bertsch, S. Futral, S. J. Schmidt, N.A.~Adams, U. Rasthofer, J. Sukys, C. Conti., M. Chatzimanolakis, I. Kičić
+\eframe
+
+\bframe{Innovations}
+
+- coroutines for block-wise processing
+framework \\
+\bigskip
+- a particle method for curvature estimation \\
+\bigskip
+- coalescence prevention
 
 \eframe
 
-\bframe{Meaningless comparison}
-\begin{center}
-  \includegraphics[width=0.90\textwidth]{i/lines.png}
-\end{center}
-random search path depends on initial condition \\
-backproparation is a supperior way to train GRU and LSTM
+\bframe{Feedback}
+
+rotoshake(r/vfx): Make an egg cream. I’ve seen good foam simulations
+before but not being generated right out of the fluid like
+that. Impressive.
+
+\bigskip
+
+ValarDohaerys(r/CFD): Really cool! I'm preparing for my fluid mechanics 2 exam these days and I can kind of keep up with the maths and modeling. Wohoo, nice to see that all the stuff pays off and is actually used. I find the example especially interesting (chemEng).
+Just needed to nerd-talk. Sry for that xD
+
+\bigskip
+
+s-macke(HN): Two-phase fluid flow with surface tension in the
+web. Fantastic! I tried it myself, but my simulations most of the time
+exploded .... I mean diverged.  Keep up the good work! Presenting the
+research is a must and thanks to cross compilers and WebAssembly it
+was never so easy to even demonstrate your simulation code.
+
 \eframe
 
-\bframe{Crippled artificial life toy is an example of meta-learning?}
-\begin{center}
-  \includegraphics[width=0.75\textwidth]{i/maze.png}
-\end{center}
-The state is very small (5x4): position, orientation, flag if food was seen. \\
-Can be solved by a tabular method
+\bframe{Outlook}
+
+- dynamic contact line \\
+\bigskip
+- models for coalescence \\
+\bigskip
+-(adaptive) multi-resolution \\
 \eframe
 
 \end{document}
