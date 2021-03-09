@@ -3,13 +3,11 @@
 
 \parindent0pt		% Indentation probably not good for presentation
 \parskip0pt		% Neither is automatic extra space between paragraphs
+\footline={}
 
-%
-% Set some fonts
-%
-\font\titlefont=cmssbx10 at 20pt % Define fonts for title of presentation
-\font\normalfont=cmss12          % ordinary text
-\font\slidetitlefont=cmssbx10    % title of a slide
+\font\titlefont=cmss10 at 20pt
+\font\normalfont=cmss12
+\font\slidetitlefont=cmssbx10
 \font\it=cmti12
 %
 \baselineskip=15pt
@@ -41,7 +39,7 @@
 \scriptscriptfont3=\ssexfont
 %
 
-\def\NewSlide{\vfill\eject}                      % Begin a new slide; slide number increases
+\def\NewSlide{\vfill\eject}
 
 \def\SlideTitle#1{%                              % Set the slide title, show it as the headline
 \global\headline{%                               % of the slide in slidetitlefont, with a
@@ -51,10 +49,6 @@
 \hrule height 1pt depth 0pt
 }}}
 
-%
-% Includes an image. The image file name is #2, and #1 is a specification of the dimension of the
-% image (will be scaled accordingly) in the usual TeX syntax (width, height, depth).
-%
 \def\image[#1]#2{%
 \pdfximage #1 {#2}\pdfrefximage\pdflastximage}
 
@@ -64,7 +58,5 @@
 \hsize=134mm
 \hoffset=-20.4mm
 \voffset=-12.4mm
-
-\def\rm{\fam=0} %% Added 14. September 2010. Use roman font in math.
 
 \catcode`\@=12
