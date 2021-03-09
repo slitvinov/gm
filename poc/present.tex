@@ -41,18 +41,15 @@
 
 \def\NewSlide{\vfill\eject}
 
-\def\SlideTitle#1{%                              % Set the slide title, show it as the headline
-\global\headline{%                               % of the slide in slidetitlefont, with a
-\vbox to 5mm{%                                   % horizontal line separating the headline from
-\hbox to \hsize{\slidetitlefont #1}%             % the main body of the slide
-\vskip3pt plus 1fil minus 1fil
-\hrule height 1pt depth 0pt
-}}}
+\def\SlideTitle#1{
+\global\headline{\centerline{\slidetitlefont #1}}
+        \image[width\pdfpagewidth]{../i/line.png}
+}
 
 \def\image[#1]#2{%
 \pdfximage #1 {#2}\pdfrefximage\pdflastximage}
 
-\pdfpagewidth=144mm
+\pdfpagewidth=160mm
 \pdfpageheight=90mm
 \vsize=67mm
 \hsize=134mm
