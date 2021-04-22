@@ -19,13 +19,13 @@
 The optimization problem
 \begin{equation*}
 \begin{array}{ll}
-	\mbox{maximize}_{z\in\R^d} & R(z) \,.
+	\mbox{maximize}_{z\in\R^d} & R(z) \,
 \end{array}
 \end{equation*}
 is cast into
 \begin{equation*}
 \begin{array}{ll}
-	\mbox{maximize}_{p(z)} & \mathbb{E}_p[R(z)] \,.
+	\mbox{maximize}_{p(z)} & \mathbb{E}_p[R(z)] \,
 \end{array}
 \end{equation*}
 - probabilistic policy is a modeling choice \newline
@@ -35,9 +35,9 @@ is cast into
 \eframe
 
 \bframe{Random Search}
-\begin{algorithmic}[1]
-\STATE {\bf Hyperparameters:} $\alpha$, $\delta$
-\STATE {\bf Initialize:} $z_0$ and $k = 0$.
+\begin{algorithmic}
+\STATE {\bf Hyperparameters:} $\alpha$, $\delta$, $z_0$
+\STATE {\bf Initialize:} $k = 0$
 \WHILE{ending condition not satisfied}
 \STATE $z_k \leftarrow z_k + \alpha \frac{R(z_k + \delta) - R(z_k - \delta)}{2 \delta}$
 \STATE $k\leftarrow k + 1$
@@ -46,11 +46,11 @@ is cast into
 \eframe
 
 \bframe{REINFORCE}
-\begin{algorithmic}[1]
-\STATE {\bf Hyperparameters:} $\alpha$.
-\STATE {\bf Initialize:} $\vartheta_0$ and $k = 0$.
+\begin{algorithmic}
+\STATE {\bf Hyperparameters:} $\alpha$, $\vartheta_0$
+\STATE {\bf Initialize:} $k = 0$
 \WHILE{ending condition not satisfied}
-\STATE Sample $z_k\sim p(z;\vartheta_k)$.
+\STATE Sample $z_k\sim p(z;\vartheta_k)$
 \STATE $\vartheta_{k+1} = \vartheta_k + \alpha R(z_k) \nabla_\vartheta \log p(z_k; \vartheta_k)$
 \STATE $k\leftarrow k + 1$
 \ENDWHILE
