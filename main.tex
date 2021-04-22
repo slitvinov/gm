@@ -1,73 +1,77 @@
 \documentclass[aspectratio=169,8pt]{beamer}
+\usepackage{algorithm, algorithmic, amsfonts, amsmath, amssymb, amsthm, graphicx, url}
+\usepackage{listings}
 \setbeamercolor{frametitle}{fg=black,bg=white}
 \input{sty/notheme.tex}
 \input{sty/def.tex}
 \input{sty/pkg.tex}
 
+\newcommand{\R}{\mathbb{R}}  
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\minimize}{\mathrm{minimize}}
+\newcommand{\maximize}{\mathrm{maximize}}
+\newcommand{\st}{\mathrm{subject to}}
+\parindent0pt		% Indentation probably not good for presentation
+\parskip0pt		% Neither is automatic extra space between paragraphs
+
 \begin{document}
-\bframe{Aphros}
-``Sea-Foam''
-\begin{center}
-  \includegraphics[width=0.5\textwidth]{i/god.png}
-\end{center}
+\bframe{Adding abstraction until the problem is solved}
+The optimization problem
+\begin{equation}
+\begin{array}{ll}
+	\mbox{maximize}_{z\in\R^d} & R(z) \,.
+	\end{array}
+\end{equation}
+is cast into
+\begin{equation}
+\begin{array}{ll}
+	\mbox{maximize}_{p(z)} & \mathbb{E}_p[R(z)] \,.
+\end{array}
+\end{equation}
+
+- probabilistic policy is a modeling choice \newline
+- $p(u)$ must rich enough to approximate delta functions \newline
+- easy to search by gradient methods \newline
+- easy to sample from \newline
 \eframe
 
-\bframe{Aphros}
-\begin{center}
-  \includegraphics[width=0.75\textwidth]{i/ddg.png}
-\end{center}
+\bframe{Random Search}
+\begin{algorithmic}[1]
+\STATE {\bf Hyperparameters:} $\alpha$, $\delta$
+\STATE {\bf Initialize:} $z_0$ and $k = 0$.
+\WHILE{ending condition not satisfied}
+\STATE $z_k \leftarrow z_k + \alpha \frac{R(z_k + \delta) - R(z_k - \delta)}{2 \delta}$
+\STATE $k\leftarrow k + 1$
+\ENDWHILE
+\end{algorithmic}
 \eframe
 
-\bframe{Authors}
-\\
-Petr Karnakov\\
-Sergey Litvinov\\
-Fabian Wermelinger\\
-Prof. Petros Koumoutsakos
-\vskip 4em
-Based on Cubism: \\
-D. Rossinelli, B. Hejazialhosseini, P. Hadjidoukas, C. Bekas, A. Curioni, A. Bertsch, S. Futral, S. J. Schmidt, N.A.~Adams, U. Rasthofer, J. Sukys, C. Conti., M. Chatzimanolakis, I. Kičić
+\bframe{REINFORCE}
+\begin{algorithmic}[1]
+\STATE {\bf Hyperparameters:} $\alpha$.
+\STATE {\bf Initialize:} $\vartheta_0$ and $k = 0$.
+\WHILE{ending condition not satisfied}
+\STATE Sample $z_k\sim p(z;\vartheta_k)$.
+\STATE $\vartheta_{k+1} = \vartheta_k + \alpha R(z_k) \nabla_\vartheta \log p(z_k; \vartheta_k)$
+\STATE $k\leftarrow k + 1$
+\ENDWHILE
+\end{algorithmic}
 \eframe
 
-\bframe{Innovations}
+\bframe{Test}
 
-- coroutines for block-wise processing
-framework \\
-\bigskip
-- a particle method for curvature estimation \\
-\bigskip
-- coalescence prevention
+\begin{equation}
+  R(z) = z (z - 2)
+\end{equation}
 
-\eframe
+Random Search \newline
+$z_0 = 0$, $\alpha = 0.1$, $\delta = 0.001$ \newline
+$z_{30} = 0.99901$ \newline
 
-\bframe{Feedback}
+REINFORCE \newline
+$\mu_0 = 0$, $\sigma_0 = 1.0$, $\alpha = 0.0001$ \newline
+$\mu_{900000} = 1.0007$,  $\sigma_{900000} = 0.449012$ \newline
 
-rotoshake(r/vfx): Make an egg cream. I’ve seen good foam simulations
-before but not being generated right out of the fluid like
-that. Impressive.
-
-\bigskip
-
-ValarDohaerys(r/CFD): Really cool! I'm preparing for my fluid mechanics 2 exam these days and I can kind of keep up with the maths and modeling. Wohoo, nice to see that all the stuff pays off and is actually used. I find the example especially interesting (chemEng).
-Just needed to nerd-talk. Sry for that xD
-
-\bigskip
-
-s-macke(HN): Two-phase fluid flow with surface tension in the
-web. Fantastic! I tried it myself, but my simulations most of the time
-exploded .... I mean diverged.  Keep up the good work! Presenting the
-research is a must and thanks to cross compilers and WebAssembly it
-was never so easy to even demonstrate your simulation code.
-
-\eframe
-
-\bframe{Outlook}
-
-- dynamic contact line \\
-\bigskip
-- models for coalescence \\
-\bigskip
--(adaptive) multi-resolution \\
 \eframe
 
 \end{document}

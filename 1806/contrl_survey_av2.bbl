@@ -1,0 +1,516 @@
+\begin{thebibliography}{10}
+
+\bibitem{abbasi18}
+Y.~Abbasi-Yadkori, N.~Lazic, and C.~Szepesv{\'a}ri.
+\newblock The return of $\epsilon$-greedy: sublinear regret for model-free
+  linear quadratic control.
+\newblock {\em arXiv:1804.06021}, 2018.
+
+\bibitem{abbasi2011regret}
+Y.~Abbasi-Yadkori and C.~Szepesv{\'a}ri.
+\newblock {Regret Bounds for the Adaptive Control of Linear Quadratic Systems}.
+\newblock In {\em Conference on Learning Theory ({COLT})}, 2011.
+
+\bibitem{abbasi15}
+Y.~Abbasi-Yadkori and C.~Szepesv{\'a}ri.
+\newblock {Bayesian Optimal Control of Smoothly Parameterized Systems: The Lazy
+  Posterior Sampling Algorithm}.
+\newblock In {\em Conference on Uncertainty in Artificial Intelligence}, 2015.
+
+\bibitem{abeille17}
+M.~Abeille and A.~Lazaric.
+\newblock {Thompson Sampling for Linear-Quadratic Control Problems}.
+\newblock In {\em AISTATS}, 2017.
+
+\bibitem{agarwal2010optimal}
+A.~Agarwal, O.~Dekel, and L.~Xiao.
+\newblock Optimal algorithms for online convex optimization with multi-point
+  bandit feedback.
+\newblock In {\em Conference on Learning Theory ({COLT})}, 2010.
+
+\bibitem{akametalu2014reachability}
+A.~K. Akametalu, J.~F. Fisac, J.~H. Gillula, S.~Kaynama, M.~N. Zeilinger, and
+  C.~J. Tomlin.
+\newblock Reachability-based safe learning with gaussian processes.
+\newblock In {\em Proceedings of the 53rd Conference on Decision and Control},
+  pages 1424--1431. IEEE, 2014.
+
+\bibitem{aastrom1965optimal}
+K.~J. {\AA}str{\"o}m.
+\newblock Optimal control of {Markov} processes with incomplete state
+  information.
+\newblock {\em Journal of Mathematical Analysis and Applications},
+  10(1):174--205, 1965.
+
+\bibitem{aswani2013provably}
+A.~Aswani, H.~Gonzalez, S.~S. Sastry, and C.~Tomlin.
+\newblock Provably safe and robust learning-based model predictive control.
+\newblock {\em Automatica}, 49(5):1216--1226, 2013.
+
+\bibitem{auer2002finite}
+P.~Auer, N.~Cesa-Bianchi, and P.~Fischer.
+\newblock Finite-time analysis of the multiarmed bandit problem.
+\newblock {\em Machine learning}, 47(2-3):235--256, 2002.
+
+\bibitem{berkenkamp2017safe}
+F.~Berkenkamp, M.~Turchetta, A.~Schoellig, and A.~Krause.
+\newblock Safe model-based reinforcement learning with stability guarantees.
+\newblock In {\em Advances in Neural Information Processing Systems (NIPS)},
+  2017.
+
+\bibitem{BertsekasDPBook2}
+D.~P. Bertsekas.
+\newblock {\em Dynamic Programming and Optimal Control}, volume~2.
+\newblock Athena Scientific, Nashua, NH, 4th edition, 2012.
+
+\bibitem{BertsekasDPBook}
+D.~P. Bertsekas.
+\newblock {\em Dynamic Programming and Optimal Control}, volume~1.
+\newblock Athena Scientific, Nashua, NH, 4th edition, 2017.
+
+\bibitem{bertsekas1996temporal}
+D.~P. Bertsekas and S.~Ioffe.
+\newblock Temporal differences-based policy iteration and applications in
+  neuro-dynamic programming.
+\newblock Technical Report LIDS-P-2349, MIT Laboratory for Information and
+  Decision Systems Report, 1996.
+
+\bibitem{bertsekas1996neuro}
+D.~P. Bertsekas and J.~N. Tsitsiklis.
+\newblock {\em Neuro-Dynamic Programming}.
+\newblock Athena Scientific, 1996.
+
+\bibitem{Beyer02}
+H.-G. Beyer and H.-P. Schwefel.
+\newblock {Evolution Strategies} - a comprehensive introduction.
+\newblock {\em Natural Computing}, 1(1):3--52, 2002.
+
+\bibitem{bialas1989cooperative}
+W.~F. Bialas.
+\newblock Cooperative n-person {Stackelberg} games.
+\newblock In {\em Proceedings of the 28th Conference on Decision and Control'},
+  1989.
+
+\bibitem{blondel2000survey}
+V.~D. Blondel and J.~N. Tsitsiklis.
+\newblock A survey of computational complexity results in systems and control.
+\newblock {\em Automatica}, 36(9):1249--1274, 2000.
+
+\bibitem{bojarski2016end}
+M.~Bojarski, D.~Del~Testa, D.~Dworakowski, B.~Firner, B.~Flepp, P.~Goyal, L.~D.
+  Jackel, M.~Monfort, U.~Muller, J.~Zhang, et~al.
+\newblock End to end learning for self-driving cars.
+\newblock Technical report, NVIDIA, 2016.
+\newblock \url{arXiv:1604.07316}. Press Release at
+  \url{https://devblogs.nvidia.com/explaining-deep-learning-self-driving-car/}.
+
+\bibitem{bottou2013counterfactual}
+L.~Bottou, J.~Peters, J.~Qui{\~n}onero-Candela, D.~X. Charles, D.~M.
+  Chickering, E.~Portugaly, D.~Ray, P.~Simard, and E.~Snelson.
+\newblock Counterfactual reasoning and learning systems: The example of
+  computational advertising.
+\newblock {\em The Journal of Machine Learning Research}, 14(1):3207--3260,
+  2013.
+
+\bibitem{bowling2015heads}
+M.~Bowling, N.~Burch, M.~Johanson, and O.~Tammelin.
+\newblock Heads-up limit hold'em poker is solved.
+\newblock {\em Science}, 347(6218):145--149, 2015.
+
+\bibitem{bradtke1996linear}
+S.~J. Bradtke and A.~G. Barto.
+\newblock Linear least-squares algorithms for temporal difference learning.
+\newblock {\em Machine Learning}, 22(1-3):33--57, 1996.
+
+\bibitem{bradtke1994adaptive}
+S.~J. Bradtke, B.~E. Ydstie, and A.~G. Barto.
+\newblock Adaptive linear quadratic control using policy iteration.
+\newblock In {\em Proceedings of the 1994 American Control Conference}, 1994.
+
+\bibitem{campi2002finite}
+M.~C. Campi and E.~Weyer.
+\newblock {Finite Sample Properties of System Identification Methods}.
+\newblock {\em IEEE Transactions on Automatic Control}, 47(8), 2002.
+
+\bibitem{Dann15}
+C.~Dann and E.~Brunskill.
+\newblock Sample complexity of episodic fixed-horizon reinforcement learning.
+\newblock In {\em Advances in Neural Information Processing Systems (NIPS)},
+  2015.
+
+\bibitem{dayan1991reinforcement}
+P.~Dayan.
+\newblock Reinforcement comparison.
+\newblock In {\em Connectionist Models}, pages 45--51. Elsevier, 1991.
+
+\bibitem{dayan1992convergence}
+P.~Dayan.
+\newblock The convergence of {TD ($\lambda$)} for general $\lambda$.
+\newblock {\em Machine Learning}, 8(3-4):341--362, 1992.
+
+\bibitem{Dean17}
+S.~Dean, H.~Mania, N.~Matni, B.~Recht, and S.~Tu.
+\newblock On the sample complexity of the linear quadratic regulator.
+\newblock {\em Foundations of Computational Mathematics}, 2018.
+\newblock To appear. Preprint available at \url{arXiv:1710.01688}.
+
+\bibitem{Dean18}
+S.~Dean, H.~Mania, N.~Matni, B.~Recht, and S.~Tu.
+\newblock Regret bounds for robust adaptive control of the linear quadratic
+  regulator.
+\newblock \url{arXiv:1805.09388}, 2018.
+
+\bibitem{efron79}
+B.~Efron.
+\newblock {Bootstrap Methods: Another Look at the Jackknife}.
+\newblock {\em The Annals of Statistics}, 7(1), 1979.
+
+\bibitem{erez2013integrated}
+T.~Erez, K.~Lowrey, Y.~Tassa, V.~Kumar, S.~Kolev, and E.~Todorov.
+\newblock An integrated system for real-time model predictive control of
+  humanoid robots.
+\newblock In {\em Proceedings of the 13th {IEEE-RAS} International Conference
+  on Humanoid Robots (Humanoids)}, 2013.
+
+\bibitem{flaxman2005online}
+A.~D. Flaxman, A.~T. Kalai, and H.~B. McMahan.
+\newblock Online convex optimization in the bandit setting: gradient descent
+  without a gradient.
+\newblock {\em Proceedings of the 16th annual ACM-SIAM symposium on Discrete
+  algorithms}, pages 385--394, 2005.
+
+\bibitem{gao2014machine}
+J.~Gao and R.~Jamidar.
+\newblock Machine learning applications for data center optimization.
+\newblock Technical report, Google White Paper, 2014.
+
+\bibitem{goodwin1981discrete}
+G.~C. Goodwin, P.~J. Ramadge, and P.~E. Caines.
+\newblock Discrete time stochastic adaptive control.
+\newblock {\em SIAM Journal on Control and Optimization}, 19(6):829--853, 1981.
+
+\bibitem{hazan2012near}
+E.~Hazan, S.~Kale, and S.~Shalev-Shwartz.
+\newblock Near-optimal algorithms for online matrix prediction.
+\newblock In {\em Conference on Learning Theory ({COLT})}, 2012.
+
+\bibitem{henderson2017deep}
+P.~Henderson, R.~Islam, P.~Bachman, J.~Pineau, D.~Precup, and D.~Meger.
+\newblock Deep reinforcement learning that matters.
+\newblock \url{arXiv:1709.06560}, 2017.
+
+\bibitem{islam2017reproducibility}
+R.~Islam, P.~Henderson, M.~Gomrokchi, and D.~Precup.
+\newblock Reproducibility of benchmarked deep reinforcement learning tasks for
+  continuous control.
+\newblock \url{arxiv:1708.04133}, 2017.
+
+\bibitem{Jamieson12}
+K.~G. Jamieson, R.~D. Nowak, and B.~Recht.
+\newblock Query complexity of derivative-free optimization.
+\newblock In {\em Advances in Neural Information Processing Systems (NIPS)},
+  2012.
+
+\bibitem{kaelbling1998planning}
+L.~P. Kaelbling, M.~L. Littman, and A.~R. Cassandra.
+\newblock Planning and acting in partially observable stochastic domains.
+\newblock {\em Artificial intelligence}, 101(1-2):99--134, 1998.
+
+\bibitem{kaelbling1996reinforcement}
+L.~P. Kaelbling, M.~L. Littman, and A.~W. Moore.
+\newblock Reinforcement learning: A survey.
+\newblock {\em Journal of artificial intelligence research}, 4:237--285, 1996.
+
+\bibitem{kalman1964linear}
+R.~E. Kalman.
+\newblock When is a linear control system optimal?
+\newblock {\em Journal of Basic Engineering}, 86(1):51--60, 1964.
+
+\bibitem{kingma2014adam}
+D.~Kingma and J.~Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock \url{arxiv:1412.6980}, 2014.
+
+\bibitem{lagoudakis2003least}
+M.~G. Lagoudakis and R.~Parr.
+\newblock Least-squares policy iteration.
+\newblock {\em Journal of machine learning research}, 4(Dec):1107--1149, 2003.
+
+\bibitem{lai1985asymptotically}
+T.~L. Lai and H.~Robbins.
+\newblock Asymptotically efficient adaptive allocation rules.
+\newblock {\em Advances in Applied Mathematics}, 6(1):4--22, 1985.
+
+\bibitem{Levine16}
+S.~Levine, C.~Finn, T.~Darrell, and P.~Abbeel.
+\newblock End-to-end training of deep visuomotor policies.
+\newblock {\em Journal of Machine Learning Research}, 17(39):1--40, 2016.
+
+\bibitem{levine2013guided}
+S.~Levine and V.~Koltun.
+\newblock Guided policy search.
+\newblock In {\em International Conference on Machine Learning (ICML)}, 2013.
+
+\bibitem{li2017game}
+N.~Li, D.~W. Oyler, M.~Zhang, Y.~Yildiz, I.~Kolmanovsky, and A.~R. Girard.
+\newblock Game theoretic modeling of driver and vehicle interactions for
+  verification and validation of autonomous vehicle control systems.
+\newblock {\em {IEEE} Transactions on control systems technology},
+  PP(99):1--16, 2017.
+
+\bibitem{lillicrap2015continuous}
+T.~P. Lillicrap, J.~J. Hunt, A.~Pritzel, N.~Heess, T.~Erez, Y.~Tassa,
+  D.~Silver, and D.~Wierstra.
+\newblock Continuous control with deep reinforcement learning.
+\newblock \url{arxiv:1509.02971}, 2015.
+
+\bibitem{LjungBook}
+L.~Ljung.
+\newblock {\em System Identification. Theory for the user}.
+\newblock Prentice Hall, Upper Saddle River, NJ, 2nd edition, 1998.
+
+\bibitem{Mania18b}
+H.~Mania, A.~Guy, and B.~Recht.
+\newblock Simple random search provides a competitive approach to reinforcement
+  learning.
+\newblock In {\em Advances in Neural Information Processing Systems (NIPS)},
+  2018.
+\newblock \url{arXiv:1803.07055}.
+
+\bibitem{Matni17}
+N.~Matni, Y.-S. Wang, and J.~Anderson.
+\newblock Scalable system level synthesis for virtually localizable systems.
+\newblock In {\em Proceedings of the 56th Conference on Decision and Control},
+  2017.
+
+\bibitem{mnih2015human}
+V.~Mnih, K.~Kavukcuoglu, D.~Silver, A.~A. Rusu, J.~Veness, M.~G. Bellemare,
+  A.~Graves, M.~Riedmiller, A.~K. Fidjeland, G.~Ostrovski, et~al.
+\newblock Human-level control through deep reinforcement learning.
+\newblock {\em Nature}, 518(7540):529, 2015.
+
+\bibitem{murray2017mathematical}
+R.~M. Murray.
+\newblock {\em A mathematical introduction to robotic manipulation}.
+\newblock CRC press, 2017.
+
+\bibitem{NemirovskiYudinBook}
+A.~Nemirovski and D.~Yudin.
+\newblock {\em Problem complexity and method efficiency in optimization}.
+\newblock Wiley, New York, 1983.
+
+\bibitem{nesterov2017random}
+Y.~Nesterov and V.~Spokoiny.
+\newblock Random gradient-free minimization of convex functions.
+\newblock {\em Foundations of Computational Mathematics}, 17(2):527--566, 2017.
+
+\bibitem{ng2000algorithms}
+A.~Y. Ng, S.~J. Russell, et~al.
+\newblock Algorithms for inverse reinforcement learning.
+\newblock In {\em International Conference on Machine Learning (ICML)}, 2000.
+
+\bibitem{17.Ouyang.LQR}
+Y.~Ouyang, M.~Gagrani, and R.~Jain.
+\newblock Learning-based control of unknown linear systems with thompson
+  sampling.
+\newblock \url{arXiv:1709.04047}, 2017.
+
+\bibitem{papadimitriou1987complexity}
+C.~H. Papadimitriou and J.~N. Tsitsiklis.
+\newblock The complexity of {M}arkov {D}ecision {P}rocesses.
+\newblock {\em Mathematics of Operations Research}, 12(3):441--450, 1987.
+
+\bibitem{PutermanBook}
+M.~L. Puterman.
+\newblock {\em Markov Decision Processes: Discrete Stochastic Dynamic
+  Programming}.
+\newblock Wiley-Interscience, 1994.
+
+\bibitem{rajeswaran2017towards}
+A.~Rajeswaran, K.~Lowrey, E.~Todorov, and S.~Kakade.
+\newblock Towards generalization and simplicity in continuous control.
+\newblock In {\em Advances in Neural Information Processing Systems (NIPS)},
+  2017.
+
+\bibitem{Rastrigin63}
+L.~A. Rastrigin.
+\newblock About convergence of random search method in extremal control of
+  multi-parameter systems.
+\newblock {\em Avtomat. i Telemekh.}, 24(11):1467---1473, 1963.
+
+\bibitem{Rosolia17}
+U.~Rosolia and F.~Borrelli.
+\newblock Learning model predictive control for iterative tasks. a data-driven
+  control framework.
+\newblock {\em IEEE Transactions on Automatic Control}, PP(99), 2017.
+
+\bibitem{sadigh2016planning}
+D.~Sadigh, S.~Sastry, S.~A. Seshia, and A.~D. Dragan.
+\newblock Planning for autonomous cars that leverage effects on human actions.
+\newblock In {\em Robotics: Science and Systems}, 2016.
+
+\bibitem{salimans2017evolution}
+T.~Salimans, J.~Ho, X.~Chen, and I.~Sutskever.
+\newblock Evolution strategies as a scalable alternative to reinforcement
+  learning.
+\newblock \url{arXiv:1703.03864}, 2017.
+
+\bibitem{schulman2015trust}
+J.~Schulman, S.~Levine, P.~Abbeel, M.~Jordan, and P.~Moritz.
+\newblock Trust region policy optimization.
+\newblock In {\em International Conference on Machine Learning (ICML)}, 2015.
+
+\bibitem{schulman2015high}
+J.~Schulman, P.~Moritz, S.~Levine, M.~Jordan, and P.~Abbeel.
+\newblock High-dimensional continuous control using generalized advantage
+  estimation.
+\newblock \url{arxiv:1506.02438}, 2015.
+
+\bibitem{SchwefelThesis}
+H.-P. Schwefel.
+\newblock {\em Evolutionsstrategie und numerische Optimierung}.
+\newblock PhD thesis, TU Berlin, 1975.
+
+\bibitem{shao2012jackknife}
+J.~Shao and D.~Tu.
+\newblock {\em {The Jackknife and Bootstrap}}.
+\newblock Springer Series in Statistics. Springer-Verlag, New York, 1995.
+
+\bibitem{silver2016mastering}
+D.~Silver, A.~Huang, C.~J. Maddison, A.~Guez, L.~Sifre, G.~Van Den~Driessche,
+  J.~Schrittwieser, I.~Antonoglou, V.~Panneershelvam, M.~Lanctot, et~al.
+\newblock Mastering the game of {Go} with deep neural networks and tree search.
+\newblock {\em Nature}, 529(7587):484--489, 2016.
+
+\bibitem{silver2014deterministic}
+D.~Silver, G.~Lever, N.~Heess, T.~Degris, D.~Wierstra, and M.~Riedmiller.
+\newblock Deterministic policy gradient algorithms.
+\newblock In {\em ICML}, 2014.
+
+\bibitem{Simchowitz18a}
+M.~Simchowitz, H.~Mania, S.~Tu, M.~I. Jordan, and B.~Recht.
+\newblock Learning without mixing.
+\newblock In {\em Conference on Learning Theory ({COLT})}, 2018.
+
+\bibitem{spall1992multivariate}
+J.~C. Spall.
+\newblock Multivariate stochastic approximation using a simultaneous
+  perturbation gradient approximation.
+\newblock {\em IEEE Transactions on Automatic Control}, 37(3):332--341, 1992.
+
+\bibitem{strehl2010learning}
+A.~Strehl, J.~Langford, L.~Li, and S.~M. Kakade.
+\newblock Learning from logged implicit exploration data.
+\newblock In {\em Advances in Neural Information Processing Systems (NIPS)},
+  2010.
+
+\bibitem{Stulp13}
+F.~Stulp and O.~Sigaud.
+\newblock Robot skill learning: From reinforcement learning to evolution
+  strategies.
+\newblock {\em {PALADYN} Journal of Behavioral Robotics}, 4(1):49--61, 2013.
+
+\bibitem{sutton1984temporal}
+R.~S. Sutton.
+\newblock {\em Temporal credit assignment in reinforcement learning}.
+\newblock PhD thesis, University of Massachusetts, Amherst, 1984.
+
+\bibitem{sutton1988learning}
+R.~S. Sutton.
+\newblock Learning to predict by the method of temporal differences.
+\newblock {\em Machine learning}, 3(1):9--44, 1988.
+
+\bibitem{SuttonBartoBook}
+R.~S. Sutton and A.~G. Barto.
+\newblock {\em Reinforcement learning: An introduction}.
+\newblock MIT press Cambridge, 1998.
+
+\bibitem{tassa2012synthesis}
+Y.~Tassa, T.~Erez, and E.~Todorov.
+\newblock Synthesis and stabilization of complex behaviors through online
+  trajectory optimization.
+\newblock In {\em International Conference on Intelligent Robots and Systems
+  (IROS)}, 2012.
+
+\bibitem{tedrake2004stochastic}
+R.~Tedrake, T.~W. Zhang, and H.~S. Seung.
+\newblock Stochastic policy gradient reinforcement learning on a simple {3D}
+  biped.
+\newblock In {\em International Conference on Intelligent Robots and Systems
+  (IROS)}, 2004.
+
+\bibitem{tesauro1995td}
+G.~Tesauro.
+\newblock {TD}-gammon: A self-teaching backgammon program.
+\newblock In {\em Applications of Neural Networks}, pages 267--285. Springer,
+  1995.
+
+\bibitem{todorov2012mujoco}
+E.~Todorov, T.~Erez, and Y.~Tassa.
+\newblock {MuJoCo}: A physics engine for model-based control.
+\newblock In {\em International Conference on Intelligent Robots and Systems
+  (IROS)}, 2012.
+
+\bibitem{tsitsiklis1994asynchronous}
+J.~N. Tsitsiklis.
+\newblock Asynchronous stochastic approximation and {Q}-learning.
+\newblock {\em Machine learning}, 16(3):185--202, 1994.
+
+\bibitem{Tu17b}
+S.~L. Tu and B.~Recht.
+\newblock Least-squares temporal difference learning for the linear quadratic
+  regulator.
+\newblock In {\em International Conference on Machine Learning (ICML)}, 2018.
+
+\bibitem{vidyasagar2008learning}
+M.~Vidyasagar and R.~L. Karandikar.
+\newblock A learning theory approach to system identification and stochastic
+  adaptive control.
+\newblock {\em Journal of Process Control}, 18(3), 2008.
+
+\bibitem{Wang16}
+Y.-S. Wang, N.~Matni, and J.~C. Doyle.
+\newblock A system level approach to controller synthesis.
+\newblock \url{arxiv:1610.04815}, 2016.
+
+\bibitem{watkins1992q}
+C.~J. Watkins and P.~Dayan.
+\newblock Q-learning.
+\newblock {\em Machine learning}, 8(3-4):279--292, 1992.
+
+\bibitem{Williams88}
+R.~J. Williams.
+\newblock Toward a theory of reinforcement-learning connectionist systems.
+\newblock Technical Report {NU-CCS-88-3}, College of Computer Science,
+  Northeastern University, 1988.
+
+\bibitem{williams1992simple}
+R.~J. Williams.
+\newblock Simple statistical gradient-following algorithms for connectionist
+  reinforcement learning.
+\newblock {\em Machine Learning}, 8(3-4):229--256, 1992.
+
+\bibitem{wu2017scalable}
+Y.~Wu, E.~Mansimov, S.~Liao, R.~Grosse, and J.~Ba.
+\newblock Scalable trust-region method for deep reinforcement learning using
+  {K}ronecker-factored approximation.
+\newblock \url{arXiv:1708.05144}, 2017.
+
+\bibitem{yu2009convergence}
+H.~Yu and D.~P. Bertsekas.
+\newblock Convergence results for some temporal difference methods based on
+  least squares.
+\newblock {\em IEEE Transactions on Automatic Control}, 54(7):1515--1531, 2009.
+
+\bibitem{Zhou95}
+K.~Zhou, J.~C. Doyle, and K.~Glover.
+\newblock {\em Robust and Optimal Control}.
+\newblock Prentice Hall, New Jersey, 1995.
+
+\bibitem{Zhu-semi-sup}
+X.~Zhu.
+\newblock Semi-supervised learning literature survey.
+\newblock Technical Report 1530, Department of Computer Sciences, University of
+  Wisconsin, Madison., 2005.
+
+\end{thebibliography}
