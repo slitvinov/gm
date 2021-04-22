@@ -20,7 +20,7 @@ The optimization problem
 \begin{equation}
 \begin{array}{ll}
 	\mbox{maximize}_{z\in\R^d} & R(z) \,.
-	\end{array}
+\end{array}
 \end{equation}
 is cast into
 \begin{equation}
@@ -58,8 +58,7 @@ is cast into
 \end{algorithmic}
 \eframe
 
-\bframe{Test}
-
+\bframe{Function minimization}
 \begin{equation}
   R(z) = z (z - 2)
 \end{equation}
@@ -73,5 +72,37 @@ $\mu_0 = 0$, $\sigma_0 = 1.0$, $\alpha = 0.0001$ \newline
 $\mu_{900000} = 1.0007$,  $\sigma_{900000} = 0.449012$ \newline
 
 \eframe
+
+\begin{frame}[fragile]
+\begin{verbatim}
+x = 1, v = 0
+do 5 times
+    x += v
+    v += F
+    R += x^2 + F^2
+\end{verbatim}
+Optimal linear in $x$ policy \newline
+\begin{verbatim}
+           x            v            F
+           1            0       1.0452
+           1    -0.212594      2.09039
+    0.787406    -0.425188      2.73559
+    0.362218    -0.583895      2.86939
+   -0.221677     -0.63483      2.92795
+\end{verbatim}
+Random search after $300$ episodes \newline
+\begin{verbatim}
+           1            0      1.04477
+           1    -0.211593      2.08954
+    0.788407    -0.423185      2.73619
+    0.365222     -0.58148      2.87225
+   -0.216258    -0.633179        2.928
+\end{verbatim}
+
+REINFORCE improved from $5$ to $3.5$ after one $900000$ episodes
+\begin{verbatim}
+     5.50281 3.49428 5.29713 6.53007 3.77084 22.2226 5.21873 15.0923 5.91384
+\end{verbatim}
+\end{frame}
 
 \end{document}
