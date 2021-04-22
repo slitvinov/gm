@@ -1,8 +1,8 @@
 import gym
 import random
 env = gym.make("CartPole-v1")
-a = random.uniform(-10, 10)
-b = random.uniform(-10, 10)
+a, b = random.uniform(-10, 10), random.uniform(-10, 10)
+# a, b = -1, -1
 obs = env.reset()
 R = 0
 while True:

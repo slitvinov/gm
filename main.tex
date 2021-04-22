@@ -17,20 +17,19 @@
 \begin{document}
 \bframe{Adding abstraction until the problem is solved}
 The optimization problem
-\begin{equation}
+\begin{equation*}
 \begin{array}{ll}
 	\mbox{maximize}_{z\in\R^d} & R(z) \,.
 \end{array}
-\end{equation}
+\end{equation*}
 is cast into
-\begin{equation}
+\begin{equation*}
 \begin{array}{ll}
 	\mbox{maximize}_{p(z)} & \mathbb{E}_p[R(z)] \,.
 \end{array}
-\end{equation}
-
+\end{equation*}
 - probabilistic policy is a modeling choice \newline
-- $p(u)$ must rich enough to approximate delta functions \newline
+- $p$ must rich enough to approximate delta functions \newline
 - easy to search by gradient methods \newline
 - easy to sample from \newline
 \eframe
@@ -59,9 +58,9 @@ is cast into
 \eframe
 
 \bframe{Function minimization}
-\begin{equation}
+\begin{equation*}
   R(z) = z (z - 2)
-\end{equation}
+\end{equation*}
 
 Random Search \newline
 $z_0 = 0$, $\alpha = 0.1$, $\delta = 0.001$ \newline

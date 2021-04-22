@@ -1,0 +1,1 @@
+while DISPLAY=:0 python3 cart.py; do :; done
